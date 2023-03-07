@@ -1,0 +1,14 @@
+1. 
+It uses session-based authentication by default which is managed by the built-in SessionAuthentication class
+
+2. 
+It's the username:password authentication which means it uses the basic authentication by default with the -a or --auth option flag
+
+3. 
+Session authentication uses cookies to store our session token. In token authentication the token is provided to use by our server and in every HTTP request, we use that token to authenticate the user.
+
+4.
+It will take us to the google authentication server where we need to enter our google credentials to login. After logging in, google asks for user consent to enable access to google account. Then google creates two new tokens - access token and refresh token to bitbucket's OAuth2 client. Access token grants access to google account for a short period of time whereas refresh token is a long-lived token that can be used to obtain another access token when one expires. 
+
+5.
+https://github.com/vaibhavchugh17/CMPUT404_Lab9
